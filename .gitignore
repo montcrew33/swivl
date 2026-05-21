@@ -1,0 +1,5 @@
+node_modules/
+dist/
+
+# Local QA screenshots from the demo iteration.
+/swivl-*.png
