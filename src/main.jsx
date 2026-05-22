@@ -11,7 +11,7 @@ import {
 import "./styles.css";
 
 const brand = {
-  logo: "/swivl-logo-transparent.png",
+  logo: "/swivl-workspaces-logo-transparent.png",
 };
 
 const imagery = {
@@ -170,10 +170,15 @@ function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200/80 bg-[#F9F8F6]/84 backdrop-blur-xl">
-      <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 sm:px-8">
-        <a aria-label="Swivl home" href="#" className="inline-flex h-12 w-20 items-center sm:w-28">
-          <img src={brand.logo} alt="Swivl" className="h-auto w-full object-contain mix-blend-multiply" />
+    <header className="sticky top-0 z-50 border-b border-gray-200/80">
+      <div className="absolute inset-0 bg-[#F9F8F6]/90 backdrop-blur-xl" aria-hidden="true" />
+      <div className="relative mx-auto grid min-h-20 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 sm:px-8">
+        <a aria-label="Swivl home" href="#" className="inline-flex h-12 w-36 items-center bg-transparent sm:h-14 sm:w-44">
+          <img
+            src={brand.logo}
+            alt="Swivl Workspaces"
+            className="h-full w-full bg-transparent object-contain object-left"
+          />
         </a>
         <nav className="hidden justify-self-center gap-8 text-sm text-[#4A4A4A] lg:flex">
           {links.map(([label, href]) => (

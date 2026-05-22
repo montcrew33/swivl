@@ -19,6 +19,11 @@ body {
   background: #f9f8f6;
 }
 
+header a[aria-label="Swivl home"],
+header a[aria-label="Swivl home"] img {
+  background: transparent;
+}
+
 button,
 a,
 input,
